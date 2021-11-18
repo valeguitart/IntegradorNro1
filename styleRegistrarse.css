@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./assets/1658-maquillaje.jpg);
+    min-height: 100vh;
+    background-size: cover;
+}
+
+/* navbar */
+
+header{
+    width: 100%;
+    padding: 0;
+    color: #000;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.246);
+}
+
+
+
+#btn-menu{
+    display: none;
+}
+
+header label {
+    display: none;
+    width: 30px;
+    padding: 10px;
+    
+}
+
+header label:hover{
+    color: #ee4d95;
+}
+
+ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.Menu a:hover{
+    color: #ee4d95;
+    background: #f681bc36;
+    
+}
+
+li a{
+    display: block;
+    padding: 15px 20px;
+    color: #000;
+    text-decoration: none;
+     
+}
+
+/* form */
+
+form{
+    margin: auto;
+    width: 50%;
+    max-width: 580px;
+    background: rgba(255, 255, 255, 0.246);
+    padding: 30px;
+    margin-top: 55px ;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    background: rgba(255, 255, 255, 0.600);
+}
+
+label{
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color:#000;
+}
+
+input{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    background:#ee4d95;
+    border: 0;
+    color: #000;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+
+input[type="submit"]:hover{
+    background: #f681bc36;
+    color: #000;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.246);
+    padding: 0;
+    margin: 258px 0 0 0;
+    text-align: center;
+}
+
+
+@media (max-width:768px) {
+
+    header label{
+        display: block;
+    }
+
+    .Menu{
+        position:absolute;
+        background-color: #f4bfd9;
+        width: 45%;
+        margin-left: -45%;
+        transition: 0.5s;
+    }
+
+    .Menu ul{
+        flex-direction: column;
+    }
+
+    .Menu li{
+        border-top: 1px solid #fff;
+    }
+
+    #btn-menu:checked ~ .Menu{
+        margin: 0;
+    }
+
+    form{
+        width: 75%;
+    }
+}

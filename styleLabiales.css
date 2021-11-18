@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+body{
+    background-color: #e991bc67;
+}
+
+/* NavBar */
+header{
+    width: 100%;
+    background-color: #f4bfd9;
+    padding: 0;
+    color: #000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#btn-menu{
+    display: none;
+}
+
+header label {
+    display: none;
+    width: 30px;
+    padding: 10px;
+}
+
+header label:hover{
+    color: #ee4d95;
+}
+
+ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.Menu a:hover{
+    color: #ee4d95;
+}
+
+li a{
+    display: block;
+    padding: 15px 20px;
+    color: #000;
+    text-decoration: none;
+     
+}
+
+/*Portada Alusiva*/
+
+.Banner{
+    padding: 0 35px;
+    background-image:url(./assets/PortadaDeLabios.jpg);
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.container img{
+    width: 100%;
+    height: 450px;
+}
+
+.container .col-lg-4{
+    padding: 25px;
+    margin: 0;
+}
+
+.container img:hover{
+    border: 5px solid #ffffff;
+}
+
+.item{
+    max-width: 100%;
+    display: block;
+    background: #ccabd8;
+    padding: 1em;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.603);
+    text-align: center; 
+    text-decoration: none;   
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    background-color: #f4bfd9;
+    padding: 0;
+}
+
+.footer-container{
+    width: 100%;
+}
+
+.grupouno{
+    width: 100%;
+    margin: auto;  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 15px;
+}
+
+.caja{
+    height: 100%;
+    margin: 5px 135px;
+    padding: 10px 0;
+}
+
+.caja h4{
+    color: #000;
+    margin-bottom: 10px ;
+    font-size: 25px;
+    margin: 0 0 20px;
+    padding: 0;
+    text-align: center;
+}
+
+.caja p{
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+ .redes-sociales a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #f4bfd9;
+    margin-right: 10px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 20%;
+}
+
+.redes-sociales a:hover{
+    color: #8474a1;
+    background: #f4bfd9;
+}
+
+.redes-sociales{
+    margin: 0 ;
+    padding: 0 0 0 108px;
+}
+
+.grupodos{
+    padding: 6px;
+    text-align: center;
+    
+} 
+
+/*RESPONSIVE*/
+@media (max-width:768px) {
+    header label{
+        display: block;
+    }
+
+    .Menu{
+        position:absolute;
+        background-color: #f4bfd9;
+        width: 45%;
+        margin-left: -45%;
+        transition: 0.5s;
+    }
+
+    .Menu ul{
+        flex-direction: column;
+    }
+
+    .Menu li{
+        border-top: 1px solid #fff;
+    }
+
+    #btn-menu:checked ~ .Menu{
+        margin: 0;
+    }  
+
+
+    /* Footer */
+
+    .grupouno{
+        margin: auto;  
+        padding: 20px 15px;
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .caja{
+        margin: 5px 135px;
+        padding: 10px 0;
+        display: contents;
+        text-align: center;
+    }
+    
+    .redes-sociales{
+        margin: 0 ;
+        padding-left:12px;
+    }    
+
+}
